@@ -1,10 +1,10 @@
 ﻿using FoodSupplementsSystem.Data.Models;
 using FoodSupplementsSystem.Data.Repositories;
-using FoodSupplementsSystem.Services.Contracts;
+using FoodSupplementsSystem.Data.Services.Contracts;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace FoodSupplementsSystem.Services
+namespace FoodSupplementsSystem.Data.Services
 {
     public class CommentsServices : ICommentsServices
     {

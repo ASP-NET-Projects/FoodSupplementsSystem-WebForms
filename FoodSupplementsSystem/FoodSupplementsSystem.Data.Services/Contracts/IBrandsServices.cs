@@ -1,7 +1,7 @@
 ﻿using FoodSupplementsSystem.Data.Models;
 using System.Collections.Generic;
 
-namespace FoodSupplementsSystem.Services.Contracts
+namespace FoodSupplementsSystem.Data.Services.Contracts
 {
     public interface IBrandsServices
     {

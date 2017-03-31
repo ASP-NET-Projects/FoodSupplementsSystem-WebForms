@@ -1,6 +1,6 @@
 ﻿using FoodSupplementsSystem.Data.Models;
 
-namespace FoodSupplementsSystem.Services.Contracts
+namespace FoodSupplementsSystem.Data.Services.Contracts
 {
     public interface ILikesServices
     {

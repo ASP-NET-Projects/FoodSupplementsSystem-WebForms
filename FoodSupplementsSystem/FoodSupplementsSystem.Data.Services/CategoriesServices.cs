@@ -1,10 +1,10 @@
 ﻿using Bytes2you.Validation;
 using FoodSupplementsSystem.Data.Models;
 using FoodSupplementsSystem.Data.Repositories;
-using FoodSupplementsSystem.Services.Contracts;
+using FoodSupplementsSystem.Data.Services.Contracts;
 using System.Collections.Generic;
 
-namespace FoodSupplementsSystem.Services
+namespace FoodSupplementsSystem.Data.Services
 {
     public class CategoriesServices : ICategoriesServices
     {

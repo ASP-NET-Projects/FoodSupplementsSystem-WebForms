@@ -5,9 +5,9 @@ using System.Linq;
 
 namespace FoodSupplementsSystem.Data.Repositories
 {
-    public class GenericRepository<T> : IRepository<T> where T : class
+    public class EfGenericRepository<T> : IRepository<T> where T : class
     {
-        public GenericRepository(IFoodSupplementsSystemDbContext context)
+        public EfGenericRepository(IFoodSupplementsSystemDbContext context)
         {
             if (context == null)
             {
