@@ -13,6 +13,8 @@ namespace FoodSupplementsSystem.Web.App_Start
     using Ninject.Extensions.Conventions;
     using Data;
     using Data.Repositories;
+    using WebFormsMvp.Binder;
+    using NinjectBindingsModules;
 
     public static class NinjectWebCommon 
     {
@@ -70,6 +72,10 @@ namespace FoodSupplementsSystem.Web.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Load(new MvpNinjectModule());
+
+            PresenterBinder.Factory = kernel.Get<IPresenterFactory>();
+
             kernel.Bind(typeof(IFoodSupplementsSystemDbContext)).To(typeof(FoodSupplementsSystemDbContext)).InRequestScope();
             kernel.Bind(typeof(IRepository<>)).To(typeof(EfGenericRepository<>));
 

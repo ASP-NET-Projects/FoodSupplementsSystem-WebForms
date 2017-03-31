@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodSupplementsSystem.Data.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodSupplementsSystem.Data.Services", "FoodSupplementsSystem.Data.Services\FoodSupplementsSystem.Data.Services.csproj", "{A9F2E584-AF82-459C-934B-8E11A5474376}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodSupplementsSystem.MVP", "FoodSupplementsSystem.MVP\FoodSupplementsSystem.MVP.csproj", "{04F9EE80-8084-4F89-96FC-2D0046819F4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A9F2E584-AF82-459C-934B-8E11A5474376}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9F2E584-AF82-459C-934B-8E11A5474376}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9F2E584-AF82-459C-934B-8E11A5474376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04F9EE80-8084-4F89-96FC-2D0046819F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F9EE80-8084-4F89-96FC-2D0046819F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F9EE80-8084-4F89-96FC-2D0046819F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F9EE80-8084-4F89-96FC-2D0046819F4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

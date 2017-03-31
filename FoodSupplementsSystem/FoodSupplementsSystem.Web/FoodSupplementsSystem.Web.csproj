@@ -139,6 +139,10 @@
       <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="WebFormsMvp, Version=1.4.5.0, Culture=neutral, PublicKeyToken=537f18701145dff0, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebFormsMvp.1.4.5.0\lib\WebFormsMvp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -242,6 +246,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Private\DetailsSupplement.aspx" />
+    <Content Include="Private\ViewComment.aspx" />
+    <Content Include="Private\ViewTopic.aspx" />
+    <Content Include="Public\ViewBrands.aspx" />
+    <Content Include="Public\ViewCategories.aspx" />
+    <Content Include="Public\ViewTopics.aspx" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -450,7 +460,52 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="NinjectBindingsModules\MvpNinjectModule.cs" />
+    <Compile Include="PresenterFactories\ICustomPresenterFactory.cs" />
+    <Compile Include="PresenterFactories\WebFormsMvpPresenterFactory.cs" />
+    <Compile Include="Private\DetailsSupplement.aspx.cs">
+      <DependentUpon>DetailsSupplement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Private\DetailsSupplement.aspx.designer.cs">
+      <DependentUpon>DetailsSupplement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Private\ViewComment.aspx.cs">
+      <DependentUpon>ViewComment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Private\ViewComment.aspx.designer.cs">
+      <DependentUpon>ViewComment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Private\ViewTopic.aspx.cs">
+      <DependentUpon>ViewTopic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Private\ViewTopic.aspx.designer.cs">
+      <DependentUpon>ViewTopic.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public\ViewBrands.aspx.cs">
+      <DependentUpon>ViewBrands.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\ViewBrands.aspx.designer.cs">
+      <DependentUpon>ViewBrands.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ViewCategories.aspx.cs">
+      <DependentUpon>ViewCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\ViewCategories.aspx.designer.cs">
+      <DependentUpon>ViewCategories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ViewTopics.aspx.cs">
+      <DependentUpon>ViewTopics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\ViewTopics.aspx.designer.cs">
+      <DependentUpon>ViewTopics.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -489,6 +544,10 @@
     <ProjectReference Include="..\FoodSupplementsSystem.Data\FoodSupplementsSystem.Data.csproj">
       <Project>{94fc32d0-12ab-40f6-9427-01ef842f0e13}</Project>
       <Name>FoodSupplementsSystem.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FoodSupplementsSystem.MVP\FoodSupplementsSystem.MVP.csproj">
+      <Project>{04f9ee80-8084-4f89-96fc-2d0046819f4c}</Project>
+      <Name>FoodSupplementsSystem.MVP</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
