@@ -245,6 +245,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Configuration\RewriteRules.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Private\DetailsSupplement.aspx" />
     <Content Include="Private\ViewComment.aspx" />
